@@ -1,8 +1,8 @@
 %p
-  = "#{@inquiry[:email]} sent you a message from your contact form:"
+  = "#{@inquiry_params[:email]} sent you a message from your contact form:"
 = "----"
-%p= @inquiry[:message]
+%p= @inquiry_params[:content]
 %br
 %br
 %br
-%p= @inquiry[:email]
+%p= @inquiry_params[:email]
