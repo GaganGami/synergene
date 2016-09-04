@@ -1,0 +1,25 @@
+#content
+  #page-header
+    .row
+      .span12
+        %h2 Services
+  .row
+    .span12
+      %h3.headline
+        %span Why Choose Our Services
+  .row
+    .span12
+      = @why_our_service.content.html_safe
+  %br/
+  .row
+    .span12
+      %h3.headline-2
+        %span Services
+  .row
+    - @services.each do |service|
+      .span4
+        .icon-box-1
+          %i.ifc-document
+          .icon-box-content
+            %h3
+              = link_to "#{service.title}", service_path(id: service.id)

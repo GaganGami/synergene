@@ -1,0 +1,211 @@
+#content
+  #page-header
+    .row
+      .span12
+        %h2 About me
+  .row
+    .span12
+      %h3.headline
+        %span Meet the Artist
+  .row
+    .span4
+      .team-member
+        = image_tag @user.avatar.url
+        %br.clear/
+        %h2
+          = @user.name
+        %h3
+          = @user.designation
+        .social-media
+          %a.facebook-icon.social-icon{:href => "#"}
+            %i.fa.fa-facebook
+          %a.twitter-icon.social-icon{:href => "#"}
+            %i.fa.fa-twitter
+          %a.googleplus-icon.social-icon{:href => "#"}
+            %i.fa.fa-google-plus
+          %a.pinterest-icon.social-icon{:href => "#"}
+            %i.fa.fa-pinterest
+    .span8
+      .icon-box-1
+        %i.ifc-umbrella_filled
+        .icon-box-content
+          %h4 My Story
+      %p
+        = @user.description.html_safe
+  %br/
+  %br/
+  .parallax{:style => "background-image:url(_content/backgrounds/bg-parallax.png);"}
+    %br/
+    %br/
+    .row
+      .span12
+        .process-builder
+          %ul.fixed
+            %li.color-shade-2
+              %span
+                %i.ifc-recycle_sign_filled
+              .process-description
+                %h3
+                  1. Creative
+                  %strong Design
+            %li.color-shade-3
+              %span
+                %i.ifc-download2_filled
+              .process-description
+                %h3
+                  2. Unique
+                  %strong Style
+            %li.color-shade-1
+              %span
+                %i.ifc-lock_filled
+              .process-description
+                %h3
+                  3. Retina
+                  %strong Ready
+            %li.color-shade-5
+              %span
+                %i.ifc-megaphone_filled
+              .process-description
+                %h3
+                  4. Very
+                  %strong Responsive
+    %br/
+  %br/
+  %br/
+  .row
+    .span6
+      .icon-box-1
+        %i.ifc-toolbox_filled
+        .icon-box-content
+          %h4 Polls &amp; Stuff
+      %p
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat.
+      %br/
+      %br/
+      .fixed
+        .progress-bar-description
+          Creativity
+          %span 75%
+        .progress-bar
+          %span.progress-bar-outer{"data-width" => "75", :style => "background-color:#0aab8a;"}
+            %span.progress-bar-inner
+      .fixed
+        .progress-bar-description
+          Sustenability
+          %span 85%
+        .progress-bar
+          %span.progress-bar-outer{"data-width" => "85", :style => "background-color:#0aab8a;"}
+            %span.progress-bar-inner
+      .fixed
+        .progress-bar-description
+          Developement
+          %span 65%
+        .progress-bar
+          %span.progress-bar-outer{"data-width" => "65", :style => "background-color:#0aab8a;"}
+            %span.progress-bar-inner
+      .fixed
+        .progress-bar-description
+          Clients
+          %span 95%
+        .progress-bar
+          %span.progress-bar-outer{"data-width" => "95", :style => "background-color:#0aab8a;"}
+            %span.progress-bar-inner
+    .span6
+      #testimonial-slider
+        %ul.slides
+          %li
+            .testimonial
+              %img{:alt => "", :src => "_content/testimonial/167x167-1.png"}/
+              %blockquote
+                %p
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+              %h5.text-right
+                %strong> Jane Doe
+                ,
+                Client
+          %li
+            .testimonial
+              %img{:alt => "", :src => "_content/testimonial/167x167-2.png"}/
+              %blockquote
+                %p
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+              %h5.text-right
+                %strong> Jane Doe
+                ,
+                Client
+          %li
+            .testimonial
+              %img{:alt => "", :src => "_content/testimonial/167x167-3.png"}/
+              %blockquote
+                %p
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+              %h5.text-right
+                %strong> Jane Doe
+                ,
+                Client
+  .row
+    .span12
+      %h3.headline-2
+        %span My Portfolio
+  .row
+    .span3
+      .portfolio-item
+        .portfolio-item-preview
+          %a{:href => "#"}
+            %img{:alt => "", :src => "_content/portfolio/220x217-1.png"}/
+          .portfolio-item-overlay
+            .portfolio-item-overlay-actions
+              %a.magnificPopup-gallery.portfolio-item-zoom{:href => "_content/portfolio/220x217-1.png", :title => "zoom"}
+                %i.ifc-zoom_in
+              %a.portfolio-item-link{:href => "#", :title => "zoom"}
+                %i.ifc-link
+            .portfolio-item-description.hidden-tablet
+              %h4.text-uppercase Portfolio Item
+              %p Description
+    .span3
+      .portfolio-item
+        .portfolio-item-preview
+          %a{:href => "#"}
+            %img{:alt => "", :src => "_content/portfolio/220x217-2.png"}/
+          .portfolio-item-overlay
+            .portfolio-item-overlay-actions
+              %a.magnificPopup-gallery.portfolio-item-zoom{:href => "_content/portfolio/220x217-2.png", :title => "zoom"}
+                %i.ifc-zoom_in
+              %a.portfolio-item-link{:href => "#", :title => "zoom"}
+                %i.ifc-link
+            .portfolio-item-description.hidden-tablet
+              %h4.text-uppercase Portfolio Item
+              %p Description
+    .span3
+      .portfolio-item
+        .portfolio-item-preview
+          %a{:href => "#"}
+            %img{:alt => "", :src => "_content/portfolio/220x217-3.png"}/
+          .portfolio-item-overlay
+            .portfolio-item-overlay-actions
+              %a.magnificPopup-gallery.portfolio-item-zoom{:href => "_content/portfolio/220x217-3.png", :title => "zoom"}
+                %i.ifc-zoom_in
+              %a.portfolio-item-link{:href => "#", :title => "zoom"}
+                %i.ifc-link
+            .portfolio-item-description.hidden-tablet
+              %h4.text-uppercase Portfolio Item
+              %p Description
+    .span3
+      .portfolio-item
+        .portfolio-item-preview
+          %a{:href => "#"}
+            %img{:alt => "", :src => "_content/portfolio/220x217-4.png"}/
+          .portfolio-item-overlay
+            .portfolio-item-overlay-actions
+              %a.magnificPopup-gallery.portfolio-item-zoom{:href => "_content/portfolio/220x217-4.png", :title => "zoom"}
+                %i.ifc-zoom_in
+              %a.portfolio-item-link{:href => "#", :title => "zoom"}
+                %i.ifc-link
+            .portfolio-item-description.hidden-tablet
+              %h4.text-uppercase Portfolio Item
+              %p Description

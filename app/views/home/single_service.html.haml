@@ -1,0 +1,12 @@
+#content
+  #page-header
+    .row
+      .span12
+        %h2 Services
+  .row
+    .span12
+      %h3.headline
+        %span= @service.title
+  .row
+    .span12
+      = @service.description.html_safe

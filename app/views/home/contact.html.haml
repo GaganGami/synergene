@@ -1,0 +1,62 @@
+%script{:src => "https://maps.googleapis.com/maps/api/js?sensor=false", :type => "text/javascript"}
+
+#content
+  #page-header
+    .row
+      .span12
+        %h2 Contact
+  .row
+    .span3
+      .icon-box-1
+        %i.ifc-umbrella
+        .icon-box-content
+          %h3 Get In Touch
+      %address
+        %strong Synergene Office
+        %br/
+        102 Devdeep Tower,
+        %br/
+        Near. HP Pump, 
+        %br/
+        Satya Marg, Bodakdev,
+        %br/
+        Ahmedabad 380054, Guj, India
+        %br/
+        %br/
+        Phone: (079) 26871687
+        %br/
+        E-mail: manish@synergene.in
+    .span9
+      %h3 Send us a Message
+      #alertMessage
+      %br/
+      = form_for @inquiry, url: contact_us_path, html: { id: "contact-form", class: "fixed", :remote => true } do |f| 
+        %fieldset
+          #formstatus
+          .row
+            .span3
+              = f.text_field :name, :placeholder => "Name", id: "name"
+            .span3
+              = f.email_field :email, :placeholder => "e-mail", id: "email"
+            .span3
+              = f.text_field :subject, placeholder: "subject", id: "subject"
+          = f.text_area :content, id: "message", class: "span9", cols: "25", rows: "10", placeholder: "comment"
+          = f.submit "Submit", id: "submit", class: "btn btn-green-dark float-right"
+  .row
+    .span12
+      .social-media.text-center{:style => "margin-bottom:-20px;"}
+        %a.facebook-icon.social-icon{:href => "#"}
+          %i.fa.fa-facebook
+        %a.twitter-icon.social-icon{:href => "#"}
+          %i.fa.fa-twitter
+        %a.pinterest-icon.social-icon{:href => "#"}
+          %i.fa.fa-pinterest
+        %a.googleplus-icon.social-icon{:href => "#"}
+          %i.fa.fa-google-plus
+  .google-map{:style => "margin-bottom:-80px;"}
+    #google-map.map
+    .overlay.top
+    .overlay.bottom
+    .overlay.left
+    .overlay.right
+

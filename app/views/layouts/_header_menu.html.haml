@@ -1,0 +1,22 @@
+#header
+  .row
+    .span3
+      = link_to root_path, id: "logo" do
+        = image_tag "logo1.png", class: "responsive-img"
+    .span9
+      %a#mobile-menu-trigger{:href => "#"}
+        %i.fa.fa-bars
+      %ul#menu.sf-menu
+        %li{class: "#{request.fullpath == '/' ? 'current' : nil}"}
+          = link_to "Home", root_path
+        %li{class: "#{(request.fullpath == '/about-us' || request.fullpath == '/about-me' || request.fullpath == '/services') ? 'current' : nil}"}
+          %a{:href => "about-us.html"} Company
+          %ul
+            %li
+              = link_to "About us", about_us_path
+            %li
+              = link_to "About me", about_me_path
+            %li
+              = link_to "Services", services_path
+        %li{class: "#{request.fullpath == '/contact' ? 'current' : nil}"}
+          = link_to "Contact", contact_path

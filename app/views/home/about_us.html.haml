@@ -1,0 +1,58 @@
+#content
+  #page-header
+    .row
+      .span12
+        %h2 About us
+  .row
+    .span12
+      %h3.headline
+        %span Who we are
+  .row
+    .span12
+      = @about_us.content.html_safe
+    .span4
+      %img.responsive-img{:alt => "", :src => "assets/_content/about-us/300x270.png"}/
+  %br/
+  %br/
+  .row
+    .span12
+      %h3.headline
+        %span Meet the Team
+  .row
+    - @team.each do |member|
+      .span4
+        .team-member
+          = link_to about_me_path(id: member.id) do
+            = image_tag member.avatar.url, size: "300x350"
+          %br.clear/
+          %h3
+            = member.name
+          %p
+            = member.designation
+          %p
+            = member.short_description
+          .social-media
+            %a.facebook-icon.social-icon{:href => "#"}
+              %i.fa.fa-facebook
+            %a.twitter-icon.social-icon{:href => "#"}
+              %i.fa.fa-twitter
+            %a.googleplus-icon.social-icon{:href => "#"}
+              %i.fa.fa-google-plus
+            %a.pinterest-icon.social-icon{:href => "#"}
+              %i.fa.fa-pinterest
+  - if @testimonials.present?
+    %br/
+    .box-3{:style => "margin-bottom:-50px;"}
+      .row
+        .span12
+          #testimonial-slider
+            %ul.slides
+              - @testimonials.each do |testimonial|
+                %li
+                  .testimonial-2
+                    = image_tag testimonial.avatar.url(:thumb)
+                    %blockquote
+                      %p
+                        = testimonial.message
+                    %h5.text-right
+                      %strong= testimonial.sender

@@ -1,0 +1,16 @@
+#content
+  .fullwidthbanner-container
+    .fullwidthbanner
+      %ul
+        - @images.each do |img|
+          %li{"data-transition" => "fade"}
+            = image_tag img.photo.url
+            .caption.title.sft{"data-easing" => "easeOutBack", "data-speed" => "700", "data-start" => "2000", "data-x" => "0", "data-y" => "100"}
+              %strong= img.title
+              .caption.text.sfl{"data-easing" => "easeOutBack", "data-speed" => "700", "data-start" => "2500", "data-x" => "0", "data-y" => "250"}
+  .box{:style => "background-image:url(assets/_content/backgrounds/bg-box-2.jpg);"}
+  .row
+    .span8
+      = @home_page.content.html_safe
+    .span4.text-right
+      %img.responsive-img{:alt => "", :src => "assets/_content/index/245x375.png"}
