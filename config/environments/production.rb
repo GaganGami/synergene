@@ -20,8 +20,8 @@ Synergene1::Application.configure do
   # config.action_dispatch.rack_cache = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this).
-  config.serve_static_assets = false
-
+  # config.serve_static_assets = false
+  config.serve_static_files = false
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
@@ -77,4 +77,17 @@ Synergene1::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  config.action_mailer.default_url_options = { host: 'https://synergene.herokuapp.com'}
+  config.action_mailer.delivery_method = :smtp
+
+  config.assets.debug = true
+   config.action_mailer.smtp_settings = {
+     :address => "smtp.gmail.com",
+     :port => 587,
+     :authentication => :plain, # I've also tried changing this to :login
+     :domain => "gmail.com",
+     :user_name => ENV['gmail_user'],
+     :password => ENV['gmail_password']
+   }
 end
