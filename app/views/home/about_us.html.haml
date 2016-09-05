@@ -30,7 +30,7 @@
           %p
             = member.designation
           %p
-            = member.short_description
+            = member.short_description.html_safe
           .social-media
             %a.facebook-icon.social-icon{:href => "#"}
               %i.fa.fa-facebook
