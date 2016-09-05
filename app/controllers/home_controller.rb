@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @images = Place.all
+    @images = Place.all.shuffle
     @home_page = StaticPage.find_by(key: "home_page")
   end
 
