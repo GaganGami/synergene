@@ -18,7 +18,7 @@
  *= require _layout/js/revolutionslider/css/custom.css
  *= require _layout/js/bxslider/jquery.bxslider.css
  *= require _layout/js/magnificpopup/magnific-popup.css
- *= require _layout/css/iconfontcustom/iconfontcustom.css
+ *= require iconfontcustom.css
  *= require font-awesome
  *= require _layout/css/animate/animate.min.css
  */
