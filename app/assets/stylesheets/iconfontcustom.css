@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'iconfontcustom';
-	src:url('fonts/iconfontcustom.eot?wisxwi');
-	src:url('fonts/iconfontcustom.eot?#iefixwisxwi') format('embedded-opentype'),
-		url('fonts/iconfontcustom.woff?wisxwi') format('woff'),
-		url('fonts/iconfontcustom.ttf?wisxwi') format('truetype'),
-		url('fonts/iconfontcustom.svg?wisxwi#iconfontcustom') format('svg');
+	src:asset-url('iconfontcustom.eot?wisxwi');
+	src:asset-url('iconfontcustom.eot?#iefixwisxwi') format('embedded-opentype'),
+		asset-url('iconfontcustom.woff?wisxwi') format('woff'),
+		asset-url('iconfontcustom.ttf?wisxwi') format('truetype'),
+		asset-url('iconfontcustom.svg?wisxwi#iconfontcustom') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
