@@ -10,15 +10,5 @@
  *
  *= require_self
  *= require_tree .
- *= require _layout/css/base.css
- *= require _layout/css/grid.css
- *= require _layout/css/elements.css
- *= require _layout/css/layout.css
- *= require _layout/js/revolutionslider/css/settings.css
- *= require _layout/js/revolutionslider/css/custom.css
- *= require _layout/js/bxslider/jquery.bxslider.css
- *= require _layout/js/magnificpopup/magnific-popup.css
- *= require iconfontcustom.css
  *= require font-awesome
- *= require _layout/css/animate/animate.min.css
  */

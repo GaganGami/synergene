@@ -11,7 +11,7 @@
     .span8
       = @about_us.content.html_safe
     .span4
-      %img.responsive-img{:alt => "", :src => "assets/_content/about-us/300x140.png"}/
+      = image_tag "300x140.png", class: "responsive-img"
   %br/
   %br/
   .row
