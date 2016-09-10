@@ -1,0 +1,235 @@
+.fullwidthbanner-container {
+  max-height: 460px !important;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 100% !important;
+  .fullwidthabnner {
+    max-height: 460px !important;
+    position: relative;
+    width: 100% !important;
+  }
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.caption {
+  ul.square li {
+    color: #474e5d;
+    &:before {
+      color: #0bac8a;
+      font-size: 8px;
+    }
+  }
+  a.btn {
+    color: #fff;
+    &:hover {
+      color: #fff;
+    }
+  }
+  &.title {
+    color: #fff;
+    font-size: 48px;
+    line-height: 60px;
+    text-transform: uppercase;
+  }
+  span {
+    color: #96e0a9;
+  }
+  &.sub-title {
+    color: #474e5d;
+    font-size: 24px;
+    line-height: 40px;
+  }
+  &.text {
+    color: #fff;
+  }
+  &.icons-1 {
+    color: #70c486;
+  }
+  &.icons-2 {
+    color: #0dac8b;
+  }
+  &.icons-3 {
+    color: #6dd5d8;
+  }
+  &.icons-1 span, &.icons-2 span, &.icons-3 span {
+    position: relative;
+    display: block;
+    width: 58px;
+    height: 58px;
+    border: 2px solid;
+    border-radius: 50%;
+    margin: 10px auto 0;
+    line-height: 70px;
+    text-align: center;
+  }
+  &.icons-1 span:after, &.icons-2 span:after, &.icons-3 span:after {
+    position: absolute;
+    bottom: -170px;
+    left: 50%;
+    height: 170px;
+    border-left: 2px solid;
+    margin-left: -1px;
+    content: "";
+  }
+  &.icons-1 span {
+    border-color: #70c486;
+    &:after {
+      border-color: #70c486;
+    }
+  }
+  &.icons-2 span {
+    border-color: #0dac8b;
+    &:after {
+      border-color: #0dac8b;
+    }
+  }
+  &.icons-3 span {
+    border-color: #6dd5d8;
+    &:after {
+      border-color: #6dd5d8;
+    }
+  }
+  &.icons-1 i, &.icons-2 i, &.icons-3 i {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 24px;
+    line-height: 48px;
+    text-align: center;
+  }
+  &.icons-1 i {
+    background-color: #70c486;
+  }
+  &.icons-2 i {
+    background-color: #0dac8b;
+  }
+  &.icons-3 i {
+    background-color: #62d4d8;
+  }
+  &.icons-1.alt span, &.icons-2.alt span, &.icons-3.alt span {
+    width: 72px;
+    height: 72px;
+    line-height: 90px;
+  }
+  &.icons-1.alt i, &.icons-2.alt i, &.icons-3.alt i {
+    width: 64px;
+    height: 64px;
+    font-size: 32px;
+    line-height: 64px;
+  }
+  &.icons-1.alt span:after, &.icons-2.alt span:after, &.icons-3.alt span:after {
+    display: none;
+  }
+}
+
+.tp-leftarrow.default {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5) url(asset-path("prev.png")) no-repeat center center;
+  opacity: 0.5;
+}
+
+.tp-rightarrow.default {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5) url(asset-path("next.png")) no-repeat center center;
+  opacity: 0.5;
+}
+
+.tp-leftarrow.default:hover, .tp-rightarrow.default:hover {
+  opacity: 1;
+}
+
+.tp-bullets.simplebullets.round .bullet {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  margin-right: 5px;
+  background: #96e0a9;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover, &.selected {
+    background: #08ab89;
+  }
+}
+
+@media (min-width: 1100px) {
+  .fullwidthbanner-container {
+    max-height: 547px !important;
+    .fullwidthabnner {
+      max-height: 547px !important;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .fullwidthbanner-container {
+    max-height: 360px !important;
+    .fullwidthabnner {
+      max-height: 360px !important;
+    }
+  }
+  .bg {
+    width: 370px;
+  }
+  .caption {
+    &.icons-1 span, &.icons-2 span, &.icons-3 span {
+      line-height: 73px;
+    }
+    &.icons-1.alt i, &.icons-2.alt i, &.icons-3.alt i {
+      line-height: 62px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .fullwidthbanner-container {
+    max-height: 200px !important;
+    .fullwidthabnner {
+      max-height: 200px !important;
+    }
+  }
+  .bg {
+    display: none;
+  }
+  .caption {
+    &.icons-1 span, &.icons-2 span, &.icons-3 span, &.icons-1.alt span, &.icons-2.alt span, &.icons-3.alt span {
+      position: relative;
+      display: block;
+      width: 40px;
+      height: 40px;
+      line-height: 53px;
+    }
+    &.icons-1 i, &.icons-2 i, &.icons-3 i, &.icons-1.alt i, &.icons-2.alt i, &.icons-3.alt i {
+      width: 32px;
+      height: 32px;
+      font-size: 18px;
+      line-height: 32px;
+    }
+    ul.square li:before {
+      font-size: 5px;
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .fullwidthbanner-container {
+    max-height: 250px !important;
+    .fullwidthabnner {
+      max-height: 250px !important;
+    }
+  }
+}

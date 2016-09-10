@@ -1,0 +1,187 @@
+/* ==========================================================================
+   #RESET AND LAYOUT
+   ========================================================================== */
+
+.bx-wrapper {
+  position: relative;
+  > img {
+    display: block;
+    max-width: 100%;
+  }
+  .bx-viewport {}
+  .bx-pager, .bx-controls-auto {
+    position: absolute;
+    z-index: 100;
+    bottom: -5px;
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   #THEME
+   ========================================================================== */
+
+#services-slider .bx-wrapper .bx-pager {
+  bottom: 20px;
+}
+
+/* #LOADER
+   ========================================================================== */
+
+.bx-wrapper {
+  .bx-loading {
+    position: absolute;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 50px;
+    height: 100%;
+    background: url(asset-path("bx_loader.gif")) center center no-repeat #fff;
+  }
+  .bx-pager {
+    color: #666;
+    text-align: center;
+    .bx-pager-item {
+      display: inline-block;
+    }
+  }
+  .bx-controls-auto .bx-controls-auto-item {
+    display: inline-block;
+  }
+  .bx-pager.bx-default-pager a {
+    display: block;
+    width: 7px;
+    height: 7px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    outline: 0;
+    margin: 0 5px;
+    background: #dacec5;
+    text-indent: -9999px;
+    &:hover, &.active {
+      background: #484f5e;
+    }
+  }
+  .bx-prev {
+    left: 30px;
+    background: url(asset-path("bg_direction_nav.png")) no-repeat center left;
+  }
+  .bx-next {
+    right: 30px;
+    background: url(asset-path("bg_direction_nav.png")) no-repeat center right;
+  }
+  .bx-prev:hover, .bx-next:hover {
+    opacity: 1;
+  }
+  .bx-controls-direction a {
+    position: absolute;
+    z-index: 9999;
+    top: 50%;
+    width: 28px;
+    height: 27px;
+    outline: 0;
+    margin-top: -16px;
+    text-indent: -9999px;
+    opacity: 0.3;
+    &.disabled {
+      display: none;
+    }
+  }
+  .bx-controls-auto {
+    text-align: center;
+    .bx-start {
+      display: block;
+      width: 10px;
+      height: 11px;
+      outline: 0;
+      margin: 0 3px;
+      text-indent: -9999px;
+      background: url(asset-path("controls.png")) -86px -11px no-repeat;
+      &:hover, &.active {
+        background-position: -86px 0;
+      }
+    }
+    .bx-stop {
+      display: block;
+      width: 9px;
+      height: 11px;
+      outline: 0;
+      margin: 0 3px;
+      text-indent: -9999px;
+      background: url(asset-path("controls.png")) -86px -44px no-repeat;
+      &:hover, &.active {
+        background-position: -86px -33px;
+      }
+    }
+  }
+  .bx-controls.bx-has-controls-auto.bx-has-pager {
+    .bx-pager {
+      width: 80%;
+      text-align: left;
+    }
+    .bx-controls-auto {
+      right: 0;
+      width: 35px;
+    }
+  }
+  .bx-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(80, 80, 80, 0.75);
+    span {
+      display: block;
+      padding: 10px;
+      color: #fff;
+      font-family: Arial;
+      font-size: 13px;
+    }
+  }
+}
+
+/* #PAGER
+   ========================================================================== */
+
+/* #DIRECTION CONTROLS (NEXT / PREV
+   ========================================================================== */
+
+/* #AUTO CONTROLS (START / STOP)
+   ========================================================================== */
+
+/* #PAGER WITH AUTO-CONTROLS HYBRID LAYOUT
+   ========================================================================== */
+
+/* #IMAGE CAPTIONS
+   ========================================================================== */
+
+/* #SLIDE TEXT
+   ========================================================================== */
+
+.slidetext {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  h1 {
+    font-size: 72px;
+    line-height: 100px;
+    color: #ffffff;
+  }
+  h2, h3 {
+    color: #ffffff;
+  }
+  a, h2 a, h3 a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .icon-box-1 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {}
+
+@media (max-width: 767px) {}
