@@ -11,7 +11,7 @@ class HomeController < ApplicationController
   end
 
   def about_me
-    @user = User.find_by(params[:id])
+    @user = User.find_by(id: params[:id])
     @user = User.first unless @user.present?
   end
 
