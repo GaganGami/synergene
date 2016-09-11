@@ -81,12 +81,11 @@ Synergene1::Application.configure do
     :s3_region => "us-west-2",  
     :path => "/resources/:class/:id_partition/:style/:id-:basename.:extension",
     :s3_credentials => {
-      :bucket => ENV["AWS_BUCKET"],
-      :access_key_id => ENV["AWS_ACCESS_KEY_ID"],
-      :secret_access_key => ENV["AWS_SECRET_ACCESS_KEY"]
+      :bucket => "synergene-place",
+      :access_key_id => "AKIAIS5O7QMTXHSJNY2Q",
+      :secret_access_key => "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"
     }
   }
-
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
