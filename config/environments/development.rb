@@ -19,10 +19,25 @@ Synergene1::Application.configure do
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
+  
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_region => "us-west-2",  
+    :path => "/resources/:class/:id_partition/:style/:id-:basename.:extension",
+    :s3_credentials => {
+      :bucket => ENV["AWS_BUCKET"],
+      :access_key_id => ENV["AWS_ACCESS_KEY_ID"],
+      :secret_access_key => ENV["AWS_SECRET_ACCESS_KEY"]
+    }
+  }
+
+
   # Raise an error on page load if there are pending migrations
   config.active_record.migration_error = :page_load
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
   config.action_mailer.delivery_method = :smtp
+
+
 
   config.assets.debug = true
    config.action_mailer.smtp_settings = {
@@ -30,9 +45,8 @@ Synergene1::Application.configure do
      :port => 587,
      :authentication => :plain, # I've also tried changing this to :login
      :domain => "gmail.com",
-     :user_name => ENV['gmail_user'],
-     :password => ENV['gmail_password']
+     :user_name => ENV['GMAIL_USER'],
+     :password => ENV['GMAIL_SECRET']
    }
-
 
 end

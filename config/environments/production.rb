@@ -76,6 +76,16 @@ Synergene1::Application.configure do
 
   # Disable automatic flushing of the log to improve performance.
   # config.autoflush_log = false
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_region => "us-west-2",  
+    :path => "/resources/:class/:id_partition/:style/:id-:basename.:extension",
+    :s3_credentials => {
+      :bucket => ENV["AWS_BUCKET"],
+      :access_key_id => ENV["AWS_ACCESS_KEY_ID"],
+      :secret_access_key => ENV["AWS_SECRET_ACCESS_KEY"]
+    }
+  }
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
@@ -84,12 +94,13 @@ Synergene1::Application.configure do
   config.action_mailer.delivery_method = :smtp
 
   config.assets.debug = true
-   config.action_mailer.smtp_settings = {
+  config.action_mailer.smtp_settings = {
      :address => "smtp.gmail.com",
      :port => 587,
      :authentication => :plain, # I've also tried changing this to :login
      :domain => "gmail.com",
-     :user_name => ENV['gmail_user'],
-     :password => ENV['gmail_password']
+     :user_name => ENV['GMAIL_USER'],
+     :password => ENV['GMAIL_SECRET']
    }
+
 end

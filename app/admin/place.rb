@@ -30,7 +30,7 @@ permit_params :title, :description, :url, :photo
       row :title
       row :url
       row :photo do |u|
-        image_tag u.photo.url if u.photo.present?
+        image_tag u.photo.url.gsub("//s3.", "https://s3-us-west-2.") if u.photo.present?
       end
       row :created_at
     end

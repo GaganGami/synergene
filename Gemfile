@@ -42,5 +42,6 @@ gem "figaro"
 
 gem 'devise'
 gem 'paperclip'
+gem 'aws-sdk'
 gem 'activeadmin', github: 'activeadmin'
 gem 'ckeditor', github: 'galetahub/ckeditor'
