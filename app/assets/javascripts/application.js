@@ -11,9 +11,8 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery_ujs
-//= require turbolinks
 //= require jquery.turbolinks
+//= require jquery_ujs
 //= require modernizr-2.6.2.min.js
 //= require viewport/jquery.viewport.js
 //= require easing/jquery.easing.1.3.js
@@ -33,3 +32,4 @@
 //= require gmap/jquery.gmap.min.js
 //= require plugins.js
 //= require scripts.js
+//= require turbolinks
