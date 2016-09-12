@@ -81,9 +81,9 @@ Synergene1::Application.configure do
     :s3_region => "us-west-2",  
     :path => "/resources/:class/:id_partition/:style/:id-:basename.:extension",
     :s3_credentials => {
-      :bucket => "synergene-place",
-      :access_key_id => "AKIAIS5O7QMTXHSJNY2Q",
-      :secret_access_key => "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"
+      :bucket => "",
+      :access_key_id => "",
+      :secret_access_key => ""
     }
   }
   # Use default logging formatter so that PID and timestamp are not suppressed.
@@ -98,8 +98,8 @@ Synergene1::Application.configure do
      :port => 587,
      :authentication => :plain, # I've also tried changing this to :login
      :domain => "gmail.com",
-     :user_name => "bipingami11@gmail.com",
-     :password => "bipin@3301"
+     :user_name => "",
+     :password => ""
    }
 
 end
