@@ -4,14 +4,21 @@
       .widget.widget_text
         .textwidget
           %p.last
-            = image_tag "logo.png", class: "responsive-img"
-            %span.hidden-tablet.hidden-phone Copyright © 2016 Synergene
+            = link_to (image_tag "incredible_India.png", class: "responsive-img"), "http://www.incredibleindia.org", :target => "_blank"
+            = link_to (image_tag "IBEF.png", class: "responsive-img"), "http://www.ibef.org", :target => "_blank"
+            = link_to (image_tag "brand_india.png", class: "responsive-img"), "http://www.brandindiapharma.in", :target => "_blank"
+            
     #footer-bottom-widget-area-2.span6.text-right
-      .widget.ewf_widget_social_media
-        .fixed
-          %a.facebook-icon.social-icon{:href => "#"}
-            %i.fa.fa-facebook
-          %a.googleplus-icon.social-icon{:href => "#"}
-            %i.fa.fa-google-plus
-          %a.linkedin-icon.social-icon{:href => "#"}
-            %i.fa.fa-linkedin
+      %span.hidden-tablet.hidden-phone Copyright © 2012-2016 Synergene Global | 
+      %span.hidden-tablet.hidden-phone Terms
+      / .widget.ewf_widget_social_media
+      /   .fixed
+      /     %a.facebook-icon.social-icon{:href => "#"}
+      /       %i.fa.fa-facebook
+      /     %a.googleplus-icon.social-icon{:href => "#"}
+      /       %i.fa.fa-google-plus
+      /     %a.linkedin-icon.social-icon{:href => "#"}
+      /       %i.fa.fa-linkedin
+      / incredible_India.png
+      / IBEF.png
+      / rxindia.png

@@ -6,11 +6,11 @@
   .row
     .span12
       %h3.headline
-        %span Meet the Artist
+        %span= "Meet the #{@user.designation}"  
   .row
     .span4
       .team-member
-        = image_tag @user.avatar.url.gsub("//s3.", "https://s3-us-west-2.")
+        = image_tag "manish_uncle.jpg"##@user.avatar.url.gsub("//s3.", "https://s3-us-west-2.")
         %br.clear/
         %h2
           = @user.name
