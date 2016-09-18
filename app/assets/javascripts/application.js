@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery.turbolinks
 //= require jquery_ujs
+//= require bootstrap-sprockets
 //= require modernizr-2.6.2.min.js
 //= require viewport/jquery.viewport.js
 //= require easing/jquery.easing.1.3.js

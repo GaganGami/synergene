@@ -10,5 +10,6 @@ Synergene1::Application.routes.draw do
   get '/contact' => "home#contact"
   post '/contact_us' => "home#contact_us"
   get '/service' => "home#single_service"
+  get '/expertise' => "home#expertise"
 
 end

@@ -1,0 +1,9 @@
+#content
+  #page-header
+    .row
+      .span12
+        %h2 Expertise
+  .row
+    .span12
+      - if @expertise.present?
+        = @expertise.content.html_safe

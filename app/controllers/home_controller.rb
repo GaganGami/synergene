@@ -10,6 +10,10 @@ class HomeController < ApplicationController
     @testimonials = Testimonial.all
   end
 
+  def expertise
+    @expertise = StaticPage.find_by(key: "expertise")
+  end
+
   def about_me
     @user = User.find_by(id: params[:id])
     @user = User.first unless @user.present?
