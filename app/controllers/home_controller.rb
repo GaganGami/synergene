@@ -21,7 +21,7 @@ class HomeController < ApplicationController
 
   def services
     @why_our_service = StaticPage.find_by(key: "why_our_service")
-    @services = Service.all
+    @services = Service.all.order(asc: :id)
   end
 
   def contact

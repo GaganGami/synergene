@@ -19,7 +19,7 @@
         %li{class: "#{(request.fullpath == '/services') ? 'current' : nil}"}
           = link_to "Services", services_path
           %ul
-            - Service.all.each do |service|
+            - Service.all.sort.each do |service|
               %li
                 = link_to service.menu_title, service_path(id: service.id)
         %li{class: "#{request.fullpath == '/contact' ? 'current' : nil}"}
