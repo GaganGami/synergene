@@ -29,6 +29,11 @@
 /* ==========================================================================
    #General Layout 
    ========================================================================== */
+@font-face {
+  font-family: 'Candara';
+  src: asset-url('Candara.ttf') format('truetype');
+  font-style: normal;
+}
 
 #wrap {
   margin: 0 auto;
