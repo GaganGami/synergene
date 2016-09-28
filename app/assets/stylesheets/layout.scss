@@ -30,9 +30,13 @@
    #General Layout 
    ========================================================================== */
 @font-face {
-  font-family: 'Candara';
-  src: asset-url('Candara.ttf') format('truetype');
-  font-style: normal;
+  font-family: 'CANDARA';
+  src: asset-url('CANDARA.eot');
+  src: local("CANDARA"), asset-url('CANDARA.woff') format("woff"), asset-url('CANDARA.ttf') format("truetype");
+}
+
+body {
+  font-family: 'CANDARA' !important;
 }
 
 #wrap {
@@ -111,7 +115,7 @@
   a {
     padding: 10px 15px;
     border-bottom: 1px dotted #e77530;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: 'CANDARA' !important;
     font-size: 12px;
     color: #666;
   }
@@ -316,7 +320,10 @@
   min-height: 300px;
   padding-bottom: 50px;
 }
-
+p {
+  text-align: justify;
+  font-family: 'CANDARA';
+}
 address span {
   color: #0dac8b;
 }
@@ -325,7 +332,7 @@ address span {
 
 #page-header {
   padding: 35px 0;
-  margin-bottom: 60px;
+  margin-bottom: 15px;
   background: url(asset-path("bg-page-header.png")) no-repeat center center;
   h2 {
     margin-bottom: 0;

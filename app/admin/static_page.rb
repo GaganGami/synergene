@@ -28,7 +28,9 @@ permit_params :key, :title, :content
       row :id
       row :title
       row :key
-      row :content
+      row :content do |s|
+        s.content.html_safe
+      end
       row :created_at
       row :updated_at
     end

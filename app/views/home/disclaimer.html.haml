@@ -1,0 +1,10 @@
+#content
+  #page-header
+    .row
+      .span12
+        %h2 
+          = @disclaimer.title
+  .row
+    .span12
+      - if @disclaimer.present?
+        = @disclaimer.content.html_safe 

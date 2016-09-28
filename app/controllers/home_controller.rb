@@ -41,4 +41,17 @@ class HomeController < ApplicationController
     end
   end
 
+  def terms
+    @terms = StaticPage.find_by(key: "terms_conditions")
+  end
+
+  def disclaimer
+    @disclaimer = StaticPage.find_by(key: "disclaimer")
+  end
+
+  def privacy_policy
+    @privacy_policy = StaticPage.find_by(key: "privacy_policy")
+  end
+
+
 end

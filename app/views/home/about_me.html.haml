@@ -2,19 +2,20 @@
   #page-header
     .row
       .span12
-        %h2 About me
+        %h2.fontsforweb_fontid_1398 About me
   .row
     .span12
       %h3.headline
-        %span= "Meet the #{@user.designation}"  
+        %span.fontsforweb_fontid_1398
+          = "Meet the #{@user.designation}"  
   .row
     .span4
       .team-member
         = image_tag @user.avatar.url.gsub("//s3.", "https://s3-us-west-2.")
         %br.clear/
-        %h2
+        %h2.fontsforweb_fontid_1398
           = @user.name
-        %h3
+        %h3.fontsforweb_fontid_1398
           = @user.designation
         .social-media
           %a.facebook-icon.social-icon{:href => "#"}
@@ -29,6 +30,6 @@
       .icon-box-1
         %i.ifc-umbrella_filled
         .icon-box-content
-          %h4 My Story
+          %h4.fontsforweb_fontid_1398 My Story
       %p
         = @user.description.html_safe

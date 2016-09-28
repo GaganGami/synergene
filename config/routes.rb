@@ -11,5 +11,7 @@ Synergene1::Application.routes.draw do
   post '/contact_us' => "home#contact_us"
   get '/service' => "home#single_service"
   get '/expertise' => "home#expertise"
-
+  get '/terms' => "home#terms"
+  get '/disclaimer' => "home#disclaimer"
+  get '/privacy_policy' => "home#privacy_policy"
 end

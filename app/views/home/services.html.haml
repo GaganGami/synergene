@@ -5,15 +5,11 @@
         %h2 Services
   .row
     .span12
-      / = @why_our_service.content.html_safe
-  %br/
-  .row
-    .span12
-      %h3.headline-2
+      %h3.headline
         %span Services
   .row
     - @services.each do |service|
-      .span4
+      .span12
         .icon-box-1
           %i.ifc-document
           .icon-box-content

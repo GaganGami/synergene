@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'CANDARA';
+  src: asset-url('CANDARA.eot');
+  src: local("CANDARA"), asset-url('CANDARA.woff') format("woff"), asset-url('CANDARA.ttf') format("truetype");
+}
+
+
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_1398">Text with this font applied</p> */
+
+.fontsforweb_fontid_1398 {
+  font-family: 'CANDARA' !important;
+}

@@ -1,0 +1,10 @@
+#content
+  #page-header
+    .row
+      .span12
+        %h2
+          = @privacy_policy.title
+  .row
+    .span12
+      - if @privacy_policy.present?
+        = @privacy_policy.content.html_safe

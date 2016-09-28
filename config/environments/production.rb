@@ -98,8 +98,7 @@ Synergene1::Application.configure do
      :port => 587,
      :authentication => :plain, # I've also tried changing this to :login
      :domain => "gmail.com",
-     :user_name => "",
-     :password => ""
+     :user_name => ENV["GMAIL_USER"],
+     :password => ENV["GMAIL_SECRET"]
    }
-
 end
