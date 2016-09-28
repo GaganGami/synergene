@@ -1,7 +1,7 @@
 #header
   .row
     .span3
-      = link_to root_path, id: "logo" do
+      = link_to root_path, id: "logo", 'data-no-turbolink' => true do
         = image_tag "logo3.png", class: "responsive-img"
     .span9
       %a#mobile-menu-trigger{:href => "#"}
