@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @images = Place.all.shuffle
+    @images = Place.where.not(:photo_file_size => nil).shuffle
     @home_page = StaticPage.find_by(key: "home_page")
   end
 
