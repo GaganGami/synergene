@@ -8,10 +8,18 @@
       %h3.headline
         %span Services
   .row
-    - @services.each do |service|
-      .span12
-        .icon-box-1
-          %i.ifc-document
-          .icon-box-content
-            %h3
-              = link_to "#{service.title}", service_path(id: service.id)
+    - @services.each_slice(2).to_a do |service|
+      - if service[0].present?
+        .span6
+          .icon-box-1
+            %i.ifc-document
+            .icon-box-content
+              %h3
+                = link_to "#{service[0].title}", service_path(id: service[0].id)
+      - if service[1].present?
+        .span6
+          .icon-box-1
+            %i.ifc-document
+            .icon-box-content
+              %h3
+                = link_to "#{service[1].title}", service_path(id: service[1].id)
