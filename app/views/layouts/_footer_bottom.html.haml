@@ -4,9 +4,10 @@
       .widget.widget_text
         .textwidget
           #partner_logo
-            = link_to (image_tag "atulya-bharat.png", class: "responsive-img"), "http://www.incredibleindia.org", :target => "_blank"
-            = link_to (image_tag "IBEF.png", class: "responsive-img"), "http://www.ibef.org", :target => "_blank"
             = link_to (image_tag "brand_india.png", class: "responsive-img"), "http://www.brandindiapharma.in", :target => "_blank"
+            = link_to (image_tag "IBEF.png", class: "responsive-img"), "http://www.ibef.org/industry/pharmaceutical-india.aspx", :target => "_blank"
+            = link_to (image_tag "atulya-bharat.png", class: "responsive-img"), "http://www.incredibleindia.org", :target => "_blank"
+            
             
     #footer-bottom-widget-area-2.span12
       %ul.span6.bottom_list
@@ -15,7 +16,7 @@
         %li
           = link_to "Disclaimer",  disclaimer_path , 'data-no-turbolink' => true
         %li
-          = link_to "Privacy and Policy",  privacy_policy_path , 'data-no-turbolink' => true
+          = link_to "Privacy Policy",  privacy_policy_path , 'data-no-turbolink' => true
       %span.hidden-tablet.hidden-phone.span6
         Copyright © 2012-2016 Synergene Global. All Rights Reserved
       

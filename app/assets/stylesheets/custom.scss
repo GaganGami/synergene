@@ -264,17 +264,24 @@
 }
 
 .home_content{
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(72, 79, 94, 0.7);
   left: 90px;
   bottom: 0;
   position: absolute;
-  margin-bottom: 340px;
+  margin-bottom: 200px;
   padding: 15px;
   border-radius: 5px;
   z-index: 1000;
+  color: #fff;
 
   &:hover,
   &:focus {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(72, 79, 94, 0.9);
+  }
+
+  .western {
+    span {
+      color: #fff !important;
+    }
   }
 }
