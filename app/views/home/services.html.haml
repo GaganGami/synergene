@@ -9,9 +9,9 @@
         %span Services
   .row
     - @services.each do |service|
-      .span12
+      .services-span
         .icon-box-1
-          %i.ifc-document
+          %i.fa.fa-hand-o-right
           .icon-box-content
             %h3
               = link_to "#{service.title}", service_path(id: service.id)

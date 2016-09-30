@@ -4,16 +4,15 @@
       %ul
         - @images.each do |img|
           %li{"data-transition" => "fade"}
+            / = image_tag "Alleppy_Temple.jpg"
             = image_tag img.photo.url.gsub("//s3.", "https://s3-us-west-2.") if img.photo.present?
-            .caption.title.sft{"data-easing" => "easeOutBack", "data-speed" => "700", "data-start" => "2000", "data-x" => "0", "data-y" => "100"}
-              %strong= img.title
-              .caption.text.sfl{"data-easing" => "easeOutBack", "data-speed" => "700", "data-start" => "2500", "data-x" => "0", "data-y" => "250"}
+            / .caption.title.sft{"data-easing" => "easeOutBack", "data-speed" => "700", "data-start" => "2000", "data-x" => "0", "data-y" => "100"}
+            /   %strong= img.title
+            .caption.text.sfl{"data-easing" => "easeOutBack", "data-speed" => "700", "data-start" => "2500", "data-x" => "0", "data-y" => "250"}
   .box{:style => "background-image:url(asset-path('bg-box-2.jpg'));"}
   .row
-    .span8
+    .span10.home_content
       = @home_page.content.html_safe
-    .span4.text-right
-      = image_tag "245x375.png", class: "responsive-img"
 = render 'modal'
 
 :javascript

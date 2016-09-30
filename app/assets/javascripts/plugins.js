@@ -157,7 +157,7 @@
 				scrollwheel: true,
 				zoom: 15,
 				markers: [{
-						address: 'Devdeep Tower, Satya Marg, Near Judges Bungalows, Bodakdev, Ahmedabad 380054',
+						address: 'Devdeep Towers, Satellite, Ahmedabad 380015',
 						html: '',
 						popup: false
 					}

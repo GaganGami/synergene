@@ -23,4 +23,4 @@
               %li
                 = link_to service.menu_title, service_path(id: service.id)
         %li{class: "#{request.fullpath == '/contact' ? 'current' : nil}"}
-          = link_to "Contact", contact_path, 'data-no-turbolink' => true
+          = link_to "Contact", contact_path, :"data-turbolinks" => "false"

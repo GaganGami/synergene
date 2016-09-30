@@ -419,6 +419,54 @@ address span {
 #footer-bottom {
   padding: 25px;
   background-color: #303745;
+
+  #footer-bottom-widget-area-2 {
+    .bottom_list {
+      float: right;
+      text-align: right;
+      margin-top: 20px;
+
+      li {
+        display: inline-block;
+
+        a {
+          color: #eeac2e;
+          font-size: 10px;
+          text-align: right;
+          margin-right: 10px;
+          &:hover {
+            color: #e77530;
+          }
+        }
+
+        /*&:after {
+          content: "|";
+          line-height: 0.6;
+          color: #ddd;
+          margin-left: 10px;
+          margin-right: 10px;
+        }*/
+
+        &:nth-child(1) {
+          line-height: 0.6;
+          border-right: 1px solid #ddd;
+          margin-right: 10px;
+        }
+
+        &:nth-child(2) {
+          line-height: 0.6;
+          border-right: 1px solid #ddd;
+          margin-right: 10px;
+        }
+      }
+    }
+    
+    .hidden-tablet {
+      margin-top:  20px;
+      color: #eeac2e;
+      font-size: 10px;
+    }
+  }
 }
 
 /* ==========================================================================
