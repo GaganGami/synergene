@@ -172,6 +172,7 @@ body {
   li {
     ul {
       border-left: 1px solid #eeac2e;
+      z-index: 2000;
       li {
         margin: 0 30px;
         a {

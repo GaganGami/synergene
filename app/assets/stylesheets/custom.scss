@@ -269,10 +269,11 @@
   left: 90px;
   bottom: 0;
   position: absolute;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   padding: 15px;
   border-radius: 5px;
   color: #fff;
+  z-index: 1000;
 
   &:hover,
   &:focus {
