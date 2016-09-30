@@ -1,14 +1,14 @@
 #header
   .row
     .span3
-      = link_to root_path, id: "logo", 'data-no-turbolink' => true do
+      = link_to root_path, id: "logo", :"data-turbolinks" => "false" do
         = image_tag "logo3.png", class: "responsive-img"
     .span9
       %a#mobile-menu-trigger{:href => "#"}
         %i.fa.fa-bars
       %ul#menu.sf-menu
         %li{class: "#{request.fullpath == '/' ? 'current' : nil}"}
-          = link_to "Home", root_path, 'data-no-turbolink' => true
+          = link_to "Home", root_path, :"data-turbolinks" => "false"
         %li{class: "#{(request.fullpath == '/about-us' || request.fullpath == '/about-me') ? 'current' : nil}"}
           %a{:href => "about-us.html"} About us
           %ul
