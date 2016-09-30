@@ -6,18 +6,17 @@
   .row
     .span12
       %h3.headline
-        %span What We Do
+        %strong What We Do
   .row
-    .span8
+    .span12
       = @about_us.content.html_safe
-    .span4
-      = image_tag "300x140.png", class: "responsive-img"
+
   %br/
   %br/
   .row
     .span12
       %h3.headline
-        %span Meet the Team
+        %strong Meet the Team
   .row
     - @team.each do |member|
       .span4

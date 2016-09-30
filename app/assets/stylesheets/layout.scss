@@ -324,7 +324,6 @@ body {
 
 #content {
   min-height: 300px;
-  padding-bottom: 50px;
 }
 p {
   text-align: justify;
@@ -1021,35 +1020,35 @@ input.validation-error, textarea.validation-error, select.validation-error {
       height: 50px;
       padding: 0;
       border-radius: 50%;
-      border: 10px solid #96e0a9;
+      border: 10px solid #484f5e;
       margin-bottom: -15px;
       margin-right: 10px;
       color: #fff;
-      line-height: 55px;
+      line-height: 40px;
     }
     &.facebook-icon {
-      background-color: #9298a3;
+      background-color: #EEAC2E;
     }
     &.twitter-icon {
-      background-color: #62d4d8;
+      background-color: #EEAC2E;
     }
     &.pinterest-icon {
-      background-color: #6fd589;
+      background-color: #EEAC2E;
     }
     &.googleplus-icon {
-      background-color: #3db0b4;
+      background-color: #EEAC2E;
     }
     &.dribble-icon {
-      background-color: #f46899;
+      background-color: #EEAC2E;
     }
     &.tumblr-icon {
-      background-color: #2a445f;
+      background-color: #EEAC2E;
     }
     &.instagram-icon {
-      background-color: #0a0b10;
+      background-color: #EEAC2E;
     }
     &.rss-icon {
-      background-color: #fe9900;
+      background-color: #EEAC2E;
     }
   }
 }
