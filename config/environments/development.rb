@@ -20,17 +20,30 @@ Synergene1::Application.configure do
   config.active_support.deprecation = :log
 
   
+  # config.paperclip_defaults = {
+  #   :storage => :s3,
+  #   :s3_region => "us-west-2",  
+  #   :path => "/resources/:class/:id_partition/:style/:id-:basename.:extension",
+  #   :s3_credentials => {
+  #     :bucket => ENV["AWS_BUCKET"],
+  #     :access_key_id => ENV["AWS_ACCESS_KEY_ID"],
+  #     :secret_access_key => ENV["AWS_SECRET_ACCESS_KEY"]
+  #   }
+  # }
   config.paperclip_defaults = {
     :storage => :s3,
-    :s3_region => "us-west-2",  
-    :path => "/resources/:class/:id_partition/:style/:id-:basename.:extension",
+    :bucket => ENV['AWS_BUCKET'],
     :s3_credentials => {
-      :bucket => ENV["AWS_BUCKET"],
-      :access_key_id => ENV["AWS_ACCESS_KEY_ID"],
-      :secret_access_key => ENV["AWS_SECRET_ACCESS_KEY"]
-    }
+      bucket: ENV['AWS_BUCKET'],
+      access_key_id: ENV['AWS_ACCESS_KEY_ID'],
+      secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'],
+      s3_region: "us-east-1",
+    },
+    :url => ":s3_host_name",
+    :s3_host_name => "s3.amazonaws.com",
+    :path => "/:class/:id_partition/:style/:filename",
+    :s3_protocol => :https
   }
-
 
   # Raise an error on page load if there are pending migrations
   config.active_record.migration_error = :page_load
