@@ -55,3 +55,8 @@
                         = testimonial.message
                     %h5.text-right
                       %strong= testimonial.sender
+
+javascript:
+  $(window).load ->
+    $('html, body').animate { scrollTop: $(document).height() }, 1000
+    return
